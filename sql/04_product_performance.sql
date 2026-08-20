@@ -93,6 +93,21 @@ SELECT *
 FROM product_metrics
 ORDER BY view_to_purchase_conversion ASC;
 
+SELECT
+    AVG(view_to_purchase_conversion) AS avg_purchase_conversion,
+
+    APPROX_QUANTILES(
+        view_to_purchase_conversion, 100
+    )[OFFSET(50)] AS median_purchase_conversion,
+
+    AVG(revenue_per_viewer) AS avg_revenue_per_viewer,
+
+    APPROX_QUANTILES(
+        revenue_per_viewer, 100
+    )[OFFSET(50)] AS median_revenue_per_viewer
+
+FROM product_metrics;
+
 
 
 Benchmark results for high-traffic products:
