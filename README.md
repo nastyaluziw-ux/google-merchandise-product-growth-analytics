@@ -39,6 +39,23 @@ In progress:
 - Python analysis
 - Dashboard and business recommendations
 
+## Preliminary Findings
+
+### Product Performance
+
+Among products with at least 1,000 unique viewers:
+
+- Median View-to-Purchase conversion was approximately **1.00%**.
+- Median revenue per viewer was approximately **0.16**.
+- **Google Campus Bike** substantially outperformed the benchmark, with a **4.83% View-to-Purchase conversion** and approximately **2.19 revenue per viewer**.
+- **Google Tonal Tee Spearmint** received more than 1,100 unique viewers but converted only **0.18%** of viewers into buyers.
+- **Candy Cane Android Cardboard Sculpture** received 2,275 unique viewers but generated only one buyer, indicating very weak monetization of product interest.
+- **Google Tracking Hat** recorded substantial product views but no add-to-cart or purchase activity and should be treated as a data/product anomaly requiring further validation.
+
+### Data Quality Note
+
+Product identifiers were not consistent across all ecommerce event types. Product-level funnel metrics were therefore matched using `item_name` rather than `item_id`.
+
 ## Repository Structure
 
 ```text
