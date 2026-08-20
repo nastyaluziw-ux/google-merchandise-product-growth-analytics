@@ -16,12 +16,13 @@ Dataset coverage:
 - 92 days of activity
 - November 2020 to January 2021
 
-## Tools
+## Technologies Used
 
-- BigQuery / SQL
-- Python / pandas
-- Statistical analysis
-- BI visualization
+- **Languages:** SQL, Python
+- **Data Platform:** BigQuery
+- **Analysis:** pandas
+- **Visualization:** Google Looker
+- **Version Control:** Git, GitHub
 
 ## Analysis Progress
 
