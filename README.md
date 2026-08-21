@@ -112,7 +112,7 @@ This demonstrated that acquisition attribution methodology materially affected t
 
 ## Repository Structure
 
-
+```text
 sql/
 ├── 01_data_audit.sql
 ├── 02_funnel_exploration.sql
